@@ -6,7 +6,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-Get the current timestamp
+Get the current timestamp in milliseconds. Provides a more semantic and consistent interface than `+new Date()` and other weird js idioms.
 
 ## Installation
 
@@ -17,15 +17,15 @@ Get the current timestamp
 ```js
 var timestamp = require('@f/timestamp')
 
+timestamp() === new Date().getTime()
+timestamp() === +new Date
 ```
 
 ## API
 
-### timestamp(arg)
+### timestamp()
 
-- `arg` -
-
-**Returns:**
+**Returns:** The current timestamp in milliseconds.
 
 ## License
 
